@@ -1,66 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.arvel.arvelkennardyeremiah_1106130130_modul2.TakeAwayActivity">
 
-    <EditText
-        android:id="@+id/editText2"
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="serif"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="69dp" />
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Identitas Pemesan:"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="182dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Phone"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="140dp" />
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Alamat"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="209dp" />
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Catatan"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="280dp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PILIH PESANAN"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="355dp" />
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="Name" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="29dp"
-        android:text="Identitas Pemesan :"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="16dp" />
-</android.support.constraint.ConstraintLayout>
+        <EditText
+            android:id="@+id/telepon"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:inputType="number"
+            android:hint="Phone" />
+
+
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Alamat" />
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Catatan" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center">
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/button_date"-->
+                <!--&lt;!&ndash;android:layout_marginTop="@dimen/button_top_margin"&ndash;&gt;-->
+                <!--android:text="@string/date_button"-->
+                <!--android:onClick="showDatePickerDialog"/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/button_time"-->
+                <!--&lt;!&ndash;android:layout_marginTop="@dimen/button_top_margin"&ndash;&gt;-->
+                <!--android:layout_alignBottom="@id/button_date"-->
+                <!--android:layout_toRightOf="@id/button_date"-->
+                <!--android:text="@string/time_button"-->
+                <!--android:onClick="showTimePickerDialog"/>-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/pilihpesanan"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="onClickPilihPesanan"
+                android:text="PILIH PESANAN" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+

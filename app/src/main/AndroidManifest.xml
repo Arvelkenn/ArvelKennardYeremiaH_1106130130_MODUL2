@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DineInActivity" />
-        <activity android:name=".TakeAwayActivity"></activity>
+        <activity android:name=".TakeAwayActivity" />
+        <activity android:name=".DaftarMenu"></activity>
     </application>
 
 </manifest>

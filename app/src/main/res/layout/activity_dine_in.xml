@@ -1,36 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.arvel.arvelkennardyeremiah_1106130130_modul2.DineInActivity">
-    z`
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="115dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PILIH PESANAN"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="231dp" />
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Detail Customer :"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="44dp" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_gravity="center"
+        android:text="Detail Customer:"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/namacustomer"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Name" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="No.Meja"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinaja"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pencetpencet"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickPilihPesanan"
+        android:text="PILIH PESANAN" />
+
+
+
+</LinearLayout>

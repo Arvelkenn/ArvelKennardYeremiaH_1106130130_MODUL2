@@ -1,42 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.arvel.arvelkennardyeremiah_1106130130_modul2.MainActivity">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PESAN SEKARANG"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="231dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="0dp"-->
+            <!--android:src="@drawable/android" />//FOTO YANG AKAN DITAMPILKAN-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome:"
+            android:textSize="17sp"
+            android:layout_gravity="center"/>
+        <RadioGroup
+            android:id="@+id/rgPilihPesanan"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbDineIn"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Dine In" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dine In"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="164dp" />
+            <RadioButton
+                android:id="@+id/rbTakeAway"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Take Away" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/btnPesanSekarang"
+            android:onClick="onClickPesanSekarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:text="PESAN SEKARANG" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Take Away"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="196dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pilih Menu:"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="130dp" />
-
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>
